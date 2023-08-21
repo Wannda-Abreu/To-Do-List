@@ -97,6 +97,7 @@ body{
         justify-content: center;
         align-items: center;
         font-size: 1.5rem;
+        cursor: pointer;
     }
     input{
         width: 25rem;
@@ -106,6 +107,7 @@ body{
         background-color: aliceblue;
         border-color: #FFA69E;
         color:rgb(79, 78, 78);
+        cursor: pointer;
     }
     .button__task{
         margin-top: 2%;
@@ -117,11 +119,18 @@ body{
         color:white;
         font-size: 1.3rem;
         font-weight: bolder;
+        cursor: pointer;
     }
-    #checkmark{
-        width: 2rem;
-    }  
+    
+  .checkmark{
+    width: 2rem;
+    height: 2rem; 
+    cursor: pointer;
+    border-radius: 2rem;
+  }
+  
     }
+     
     
     
 
