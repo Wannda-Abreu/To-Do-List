@@ -2,15 +2,15 @@
   "tasks": [
     {
       "title": "Estudiar",
-      "completed": true,
-      "description": "react 2",
+      "completed": false,
+      "description": "Java Script",
       "id": 1
     },
     {
       "title": "Estudiar",
-      "completed": false,
-      "description": "Java-Script",
-      "id": 2
+      "completed": true,
+      "description": "React Componets",
+      "id": 3
     }
   ]
 }

@@ -1,4 +1,4 @@
-// Create
+// Create  //imprimir naming
 async function createTask(task) {
   const taskList = document.querySelector(".task-list");
   const taskElement = document.createElement("li");
@@ -15,6 +15,7 @@ async function createTask(task) {
   descriptionElement.classList.add("task-description");
   descriptionElement.textContent = task.description;
 
+  // DELETE BUTTON
   const deleteButton = document.createElement("button");
   deleteButton.textContent = "🗑";
   deleteButton.classList.add("delete-button");
@@ -22,15 +23,15 @@ async function createTask(task) {
     deleteTask(task.id);
   });
 
+  //EDIT BUTTON
   const editForm = document.createElement("form");
   editForm.classList.add("edit-form");
-  editForm.style.display = "none"; // Initially hide the edit form
+  editForm.style.display = "none";
 
   const inputElement = document.createElement("input");
   inputElement.type = "text";
   inputElement.value = task.description;
   inputElement.classList.add("edit-imput");
-  
 
   const submitButton = document.createElement("button");
   submitButton.type = "submit";
@@ -46,7 +47,7 @@ async function createTask(task) {
         description: newDescription,
         element: taskElement,
       });
-      // Update the UI after successful edit
+
       task.description = newDescription;
       descriptionElement.textContent = newDescription;
       editForm.style.display = "none"; // Hide the edit form again
@@ -57,17 +58,16 @@ async function createTask(task) {
   editButton.textContent = "✎";
   editButton.classList.add("edit-button");
   editButton.addEventListener("click", function () {
-  editForm.style.display = "block"; // Show the edit form when Edit is clicked
+    editForm.style.display = "block"; // Show the edit form when Edit is clicked
   });
 
-  
+  //CHECKMARK
   const checkboxElement = document.createElement("input");
   checkboxElement.type = "checkbox";
   checkboxElement.classList.add("task-checkbox");
   checkboxElement.checked = task.completed;
-  
-  //
-  //UPDATE CHECKMARCK
+
+  //UPDATE  CHECKMARCK
   const updateTaskCompletion = async (taskId, completed) => {
     try {
       const response = await fetch(`http://localhost:3000/tasks/${taskId}`, {
@@ -77,7 +77,7 @@ async function createTask(task) {
         },
         body: JSON.stringify({ completed }),
       });
-  
+
       if (!response.ok) {
         console.error("Error updating task completion.");
       }
@@ -86,11 +86,9 @@ async function createTask(task) {
     }
   };
 
-
-
   checkboxElement.addEventListener("change", async function () {
-  task.completed = this.checked;
-  await updateTaskCompletion(task.id, task.completed);
+    task.completed = this.checked;
+    await updateTaskCompletion(task.id, task.completed);
   });
 
   taskDetailsDiv.appendChild(checkboxElement);
@@ -107,7 +105,6 @@ async function createTask(task) {
 
   taskList.appendChild(taskElement);
 }
-
 
 // Get data from server
 async function getData() {
@@ -199,7 +196,8 @@ async function editTask(task) {
     if (response.ok) {
       console.log("Task updated successfully.");
       // Optionally, you can update the task element's content
-      const taskDescriptionElement = task.element.querySelector(".task-description");
+      const taskDescriptionElement =
+        task.element.querySelector(".task-description");
       taskDescriptionElement.textContent = updatedTaskData.description;
     } else {
       console.error("Error updating task.");
@@ -208,4 +206,3 @@ async function editTask(task) {
     console.error("Error updating task:", error);
   }
 }
-  
