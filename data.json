@@ -1,16 +1,16 @@
 {
   "tasks": [
     {
-      "title": "Estudiar",
-      "completed": false,
-      "description": "Java Script",
-      "id": 1
+      "title": "hacer la colada",
+      "completed": true,
+      "description": "ropa blanca",
+      "id": 3
     },
     {
-      "title": "Estudiar",
+      "title": "Verificar Email",
       "completed": false,
-      "description": "React",
-      "id": 2
+      "description": "Java Script",
+      "id": 4
     }
   ]
 }
