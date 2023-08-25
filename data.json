@@ -5,12 +5,6 @@
       "completed": false,
       "description": "Java Script",
       "id": 1
-    },
-    {
-      "title": "Estudiar",
-      "completed": true,
-      "description": "React Componets",
-      "id": 3
     }
   ]
 }
