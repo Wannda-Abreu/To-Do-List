@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <link href="To-Do-List\style.css" type="text/css" rel="stylesheet" />
+  <link href="To-Do-List/style.css" type="text/css" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ToDo App</title>
 </head>
 
 <body>
@@ -15,17 +15,25 @@
         <a href="#">
           <img class="nav__img" src="Assets/todolist-logo.png" alt="to-do-list-logo" />
         </a>
-      </div>
-      <div class="buttons">
-        <button class="button__board">New board</button>
-        <button class="button__task">+</button>
-        <label for="task">
-          <input placeholder="new task.." id="new__task">
-          <input type="checkbox" id="checkmark">
-        </label>
-        <!-- <button class="button__task_delete">Delete</button> -->
-      </div>
+      </nav>
+     <div class="ilustration">
+      <img class="ilustration-image" src="./Assets/ilustration-image.png">
+     </div>
+     
+      <div class="task-list">
+        <form class="task-form">
+          <input type="text" id="new-task-title" placeholder="Enter new task">
+          <input type="text" id= "new-task-description" placeholder="Task Description">
+          <button type="submit" class="add-task">♔</button>
+        </form>
+      </div> 
+      </section>
+    </nav>
+  </header>
 
+  <script src="main.js"></script>
 </body>
 
 </html>
+
+
