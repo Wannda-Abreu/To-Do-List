@@ -1,5 +1,5 @@
 # To-Do List CHECKMATE
-![Checkmate logo](Assets/todolist-logo.png)
+<img src="Assets/ilustration-image.png" alt="Checkmate logo" width="120">
 
 ## ThisTo-Do List Application is a simple yet woderfull tool for managing your daily tasks.
 ### It helps you keep track of pending and completed tasks, to help you with your time management.
@@ -7,6 +7,7 @@
 
 ## Author
 - [@Wannda-Abreu](https://github.com/Wannda-Abreu)
+ 
 
 ## Features
 
