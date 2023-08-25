@@ -29,6 +29,7 @@ async function createTask(task) {
   const inputElement = document.createElement("input");
   inputElement.type = "text";
   inputElement.value = task.description;
+  inputElement.classList.add("edit-imput");
   
 
   const submitButton = document.createElement("button");
