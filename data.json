@@ -9,8 +9,13 @@
     {
       "title": "Verificar Email",
       "completed": false,
+<<<<<<< HEAD
       "description": "Java Script",
       "id": 4
+=======
+      "description": "Reunion amigas",
+      "id": 2
+>>>>>>> 51b31a072d479bebfbe77579f4c2bb49394dd3fc
     }
   ]
 }
