@@ -2,8 +2,14 @@
   "tasks": [
     {
       "title": "Estudiar",
+      "completed": true,
+      "description": "Java Script",
+      "id": 1
+    },
+    {
+      "title": "Estudiar",
       "completed": false,
-      "description": "Reunion amigas",
+      "description": "React",
       "id": 2
     }
   ]
